@@ -6,24 +6,30 @@
  */
 int main(void)
 {
-	int n, m;
-	for (n = 48; n <= 56; n++)
+	int digit1 = 0, digit2;
+
+	while (digit1 <= 9)
 	{
-		for (m = 49; m <= 57; m++)
+		digit2 = 0;
+		while (digit2 <= 9)
 		{
-			if (m > n)
+			if (digit1 != digit2 && digit1 < digit2)
 			{
-				putchar(n);
-				putchar(m);
-				if (n != 56 || m !=57)
+				putchar(digit1 + 48);
+				putchar(digit2 + 48);
+
+				if (digit1 + digit2 != 17)
 				{
 					putchar(',');
-					putchar('');
+					putchar(' ');
 				}
 			}
+			digit2++;
 		}
+		digit1++;
 	}
 	putchar('\n');
+
 	return (0);
 }
 	
