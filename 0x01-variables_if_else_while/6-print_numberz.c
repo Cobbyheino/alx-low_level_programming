@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 /**
  * main - Prints numbers from 0 to 9.
  *
@@ -9,11 +8,15 @@
 
 int main(void)
 {
-	int i;
-	for (i = 48; i < 58; i++)
+	int digit = 0;
+
+	while (digit <= 9)
 	{
-		putchar(i);
+		/*convert digit to ASCII representation*/
+		putchar(digit + '0');
+		digit++;
 	}
 	putchar('\n');
+
 	return (0);
 }
