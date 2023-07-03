@@ -13,7 +13,7 @@ void print_chessboard(char (*a)[8])
 	{
 		for (mate = 0; mate < 8; mate++)
 			_putchar(a[check][mate]);
+		_putchar('\n');
 	}
-	_putchar('\n');
 
 }
