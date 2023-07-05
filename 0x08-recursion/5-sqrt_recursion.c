@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * helper function - check if sqrt of no exists
+ * helper the function - check if sqrt of no exists
  * @num: number
  * @pSqrt: possible sqrt of number.
  *
  * Return: sqrt of num -1 for error.
  */
-int helperFunction(int num, int pSqrt)
+int helpertheFunction(int num, int pSqrt)
 {
 	if ((pSqrt * pSqrt) == num)
 	{
@@ -17,7 +17,7 @@ int helperFunction(int num, int pSqrt)
 		if ((pSqrt * pSqrt) > num)
 			return (-1);
 		else
-			return (helperFunction(num, pSqrt + 1));
+			return (helpertheFunction(num, pSqrt + 1));
 	}
 }
 
@@ -34,5 +34,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	else
-		return (helperFunction(n, 0));
+		return (helpertheFunction(n, 0));
 }
